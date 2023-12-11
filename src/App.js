@@ -1,7 +1,4 @@
-
-import { toProperCase } from './components/formatValue';
 import "bootstrap/dist/css/bootstrap.min.css"
-import './App.css';
 
 import Requests_icon from './components/graphics/Requests_icon.png'
 import AR_Inbox_icon from './components/graphics/AR_Inbox_icon.png'
