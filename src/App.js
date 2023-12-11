@@ -10,14 +10,14 @@ import DealFlow_icon from './components/graphics/DealFlow_icon.png'
 import SupplyFlow_icon from './components/graphics/SupplyFlow_icon.png'
 import PeopleFlow_icon from './components/graphics/PeopleFlow_icon.png'
 
+import nlightn_labs_logo from './components/graphics/nlightn_labs_logo.png'
+
 
 function App() {
 
-  const logo = 'https://nlightnlabs01.s3.us-west-1.amazonaws.com/nlightn+labs+logo.png'
   const logoStyle = {
     maxHeight: 200,
   }
-
 
 
   const appList =[
@@ -51,7 +51,7 @@ function App() {
         <div className="col-1"></div>
         <div className="col-md-10 col-12">
           <div className="d-flex justify-content-center mt-5">
-            <img src={logo} style={logoStyle} alt="nlightnlabs logo"></img>
+            <img src={nlightn_labs_logo} style={logoStyle} alt="nlightnlabs logo"></img>
           </div>
           <h2 className="text-center mt-3">Data-Centric GenAI Business Apps</h2>
           <div className="d-flex justify-content-center mt-3 flex-wrap">
