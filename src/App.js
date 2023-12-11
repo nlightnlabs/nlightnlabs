@@ -23,15 +23,15 @@ function App() {
 
 
   const appList =[
-    {name: "RequestFlow", icon: Requests_icon, link:"../RequestFlow", description: "Intake solution for managing all requests made by employees including requests for purchases, software access, IT equipment, contracts, sourcing, budgets and more"},
-     {name: "SpendFlow", icon: SpendFlow_icon, link:"../SpendFlow", description: "Manage orders, invoices, payments, develop accurate spend plans, prepare budgets, and develop forecasting models by combining actual spend transactions data with forecasting and planning solutions"},
-    {name: "SupplyFlow", icon: SupplyFlow_icon, link:"../SupplyFlow", description: "Discover, evaluate and select suppliers through strategic negotiations to achieve optimal prices and terms for goods and services you need. Manage contracts and performance for suppliers"},
-    {name: "DealFlow", icon: DealFlow_icon, link:"../DealFlow", description: "Manage all sales activities including leads, quotes, territories, quotas, customer engagements, collections and more through email and other intake system integrations with accounting and other systems"},
-    {name: "PeopleFlow", icon: PeopleFlow_icon, link:"../PeopleFlow", description: "Manage employee information, recruiting activities, hiring, temporary staff, and exists"},
-    {name: "ARFlow", icon: AR_Inbox_icon, link:"../ARFlow", description: "Email inbox automation and collections management for Accounts Receivable teams"},
-    {name: "Spend Evaluator", icon: Spend_Analysis_icon, link:"../Spend_Evaluation", description: "Analyze AP spend data for understanding overall spend trends, areas of most spend, supplier consolidation opportunities, payment term compliance and more"},
-    {name: "Spend Value", icon: Spend_Value_icon, link:"../Spend_Savings", description: "Quantify the savings and value impact of spend management including proftiability and cash, efficiency, risk, and more"},
-    {name: "Tail Optimizer", icon: Tail_Optimizer_icon, link:"../Tail_Spend", description: "Optimize and manage your spend with tail suppliers to maximize savings and efficiency"},
+    {name: "RequestFlow", icon: Requests_icon, link:"RequestFlow/index.html", description: "Intake solution for managing all requests made by employees including requests for purchases, software access, IT equipment, contracts, sourcing, budgets and more"},
+     {name: "SpendFlow", icon: SpendFlow_icon, link:"SpendFlow/index.html", description: "Manage orders, invoices, payments, develop accurate spend plans, prepare budgets, and develop forecasting models by combining actual spend transactions data with forecasting and planning solutions"},
+    {name: "SupplyFlow", icon: SupplyFlow_icon, link:"SupplyFlow/index.html", description: "Discover, evaluate and select suppliers through strategic negotiations to achieve optimal prices and terms for goods and services you need. Manage contracts and performance for suppliers"},
+    {name: "DealFlow", icon: DealFlow_icon, link:"DealFlow/index.html", description: "Manage all sales activities including leads, quotes, territories, quotas, customer engagements, collections and more through email and other intake system integrations with accounting and other systems"},
+    {name: "PeopleFlow", icon: PeopleFlow_icon, link:"PeopleFlow/index.html", description: "Manage employee information, recruiting activities, hiring, temporary staff, and exists"},
+    {name: "ARFlow", icon: AR_Inbox_icon, link:"ARFlow/index.html", description: "Email inbox automation and collections management for Accounts Receivable teams"},
+    {name: "Spend Evaluator", icon: Spend_Analysis_icon, link:"Spend_Evaluator/index.html", description: "Analyze AP spend data for understanding overall spend trends, areas of most spend, supplier consolidation opportunities, payment term compliance and more"},
+    {name: "Spend Value", icon: Spend_Value_icon, link:"/Spend_Value/index.html", description: "Quantify the savings and value impact of spend management including proftiability and cash, efficiency, risk, and more"},
+    {name: "Tail Optimizer", icon: Tail_Optimizer_icon, link:"/Tail_Optimizer/index.html", description: "Optimize and manage your spend with tail suppliers to maximize savings and efficiency"},
   ]
 
   const pageStyle={
