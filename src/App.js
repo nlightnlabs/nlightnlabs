@@ -27,7 +27,7 @@ function App() {
      {name: "SpendFlow", icon: SpendFlow_icon, link:"SpendFlow/index.html", description: "Manage orders, invoices, payments, develop accurate spend plans, prepare budgets, and develop forecasting models by combining actual spend transactions data with forecasting and planning solutions"},
     {name: "SupplyFlow", icon: SupplyFlow_icon, link:"SupplyFlow/index.html", description: "Discover, evaluate and select suppliers through strategic negotiations to achieve optimal prices and terms for goods and services you need. Manage contracts and performance for suppliers"},
     {name: "DealFlow", icon: DealFlow_icon, link:"DealFlow/index.html", description: "Manage all sales activities including leads, quotes, territories, quotas, customer engagements, collections and more through email and other intake system integrations with accounting and other systems"},
-    {name: "PeopleFlow", icon: PeopleFlow_icon, link:"PeopleFlow/index.html", description: "Manage employee information, recruiting activities, hiring, temporary staff, and exists"},
+    {name: "PeopleFlow", icon: PeopleFlow_icon, link:"People/Flow/index.html", description: "Manage employee information, recruiting activities, hiring, temporary staff, and exists"},
     {name: "ARFlow", icon: AR_Inbox_icon, link:"ARFlow/index.html", description: "Email inbox automation and collections management for Accounts Receivable teams"},
     {name: "Spend Evaluator", icon: Spend_Analysis_icon, link:"Spend_Evaluator/index.html", description: "Analyze AP spend data for understanding overall spend trends, areas of most spend, supplier consolidation opportunities, payment term compliance and more"},
     {name: "Spend Value", icon: Spend_Value_icon, link:"/Spend_Value/index.html", description: "Quantify the savings and value impact of spend management including proftiability and cash, efficiency, risk, and more"},
@@ -49,10 +49,13 @@ function App() {
   }
 
   return (
+    
     <div className="flex-container flex-wrap animate__animated animate__fadeIn" style={pageStyle}>
       <div className="row" style={{height:"100vh", overflowY:"auto"}}>
         <div className="col-1"></div>
         <div className="col-md-10 col-12">
+
+
           <div className="d-flex d-md-none justify-content-center mt-3">  
             <img src={nlightn_labs_logo} style={{maxHeight: 100, maxWidth: 200}} alt="nlightnlabs logo"></img>
           </div>
@@ -60,19 +63,22 @@ function App() {
             <img src={nlightn_labs_logo} style={{maxHeight: 200, maxWidth: 400}} alt="nlightnlabs logo"></img>
           </div>
           <h2 className="text-center mt-3">Solutions</h2>
+
+
           <div className="d-flex justify-content-center mt-3 flex-wrap">
             {
               appList.map((item,index)=>(
                 <>
-                  <div className="d-md-none d-flex text-dark bg-white rounded-0 shadow-sm m-1 p-3" style={{widgth: "100%", height: 150, cursor: "pointer"}}>
+                  <div className="d-md-none d-flex text-dark bg-white rounded-0 shadow-sm m-1 p-3" style={{widgth: "100%", height: 150, cursor: "pointer"}} onClick={(e)=>window.location.assign(item.link)}>
                   <img src={item.icon} className="card-img-top me-3" style={{height: 100, width: 100}} alt={`${item.name} icon`}></img>
                     <div className="card-body">
                       <h5 className="card-title fw-bold">{item.name}</h5>
                       <p className="card-text text-secondary mt-1" style={{height: 75, fontSize: "14px", overflowY: "auto"}}>{item.description}</p>
                     </div>
+                    
                   </div>
-
-                  <div className="d-none d-md-flex card shadow m-3 p-3" style={{width: 300, cursor: "pointer"}}>
+                  
+                  <div className="d-none d-md-flex card shadow m-3 p-3" style={{width: 300, cursor: "pointer"}} onClick={(e)=>window.location.assign(item.link)}>
                     <img src={item.icon} className="card-img-top" style={iconStyle} alt={`${item.name} icon`}></img>
                     <div className="card-body">
                       <h5 className="card-title fw-bold">{item.name}</h5>
