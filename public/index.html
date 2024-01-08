@@ -10,8 +10,14 @@
       content="Application portal for nlightn labs"
     />
     <title>nlightn labs Apps</title>
+    <script src="https://freeagentsoftware1.gitlab.io/apps/google-maps/js/lib.js"/>
   </head>
   <body>
+    <script>
+          FAClient = new FAAppletClient({
+              appletId: 'route-map',
+          });
+     </script>
     <div id="root"></div>
   </body>
 </html>
