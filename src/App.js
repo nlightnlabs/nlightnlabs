@@ -10,7 +10,7 @@ import SpendFlow_icon from './components/graphics/SpendFlow_icon.png'
 import DealFlow_icon from './components/graphics/DealFlow_icon.png'
 import SupplyFlow_icon from './components/graphics/SupplyFlow_icon.png'
 import PeopleFlow_icon from './components/graphics/PeopleFlow_icon.png'
-
+import Test_App_icon from './components/graphics/Test_App_icon.png'
 import nlightn_labs_logo from './components/graphics/nlightn_labs_logo.png'
 
 
@@ -32,6 +32,7 @@ function App() {
     {name: "Spend Evaluator", icon: Spend_Analysis_icon, link:"Spend_Evaluator", description: "Analyze AP spend data for understanding overall spend trends, areas of most spend, supplier consolidation opportunities, payment term compliance and more"},
     {name: "Spend Value", icon: Spend_Value_icon, link:"Spend_Value", description: "Quantify the savings and value impact of spend management including proftiability and cash, efficiency, risk, and more"},
     {name: "Tail Optimizer", icon: Tail_Optimizer_icon, link:"Tail_Optimizer", description: "Optimize and manage your spend with tail suppliers to maximize savings and efficiency"},
+    {name: "Test App", icon: Test_App_icon, link:"Test_App", description: "Internal App for testing integrations and APis"},
   ]
 
   const pageStyle={
