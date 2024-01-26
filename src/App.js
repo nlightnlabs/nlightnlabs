@@ -12,6 +12,7 @@ import SupplyFlow_icon from './components/graphics/SupplyFlow_icon.png'
 import PeopleFlow_icon from './components/graphics/PeopleFlow_icon.png'
 import Test_App_icon from './components/graphics/Test_App_icon.png'
 import nlightn_labs_logo from './components/graphics/nlightn_labs_logo.png'
+import GenAI_Workbench_icon from './components/graphics/GenAI_Workbench_icon.png'
 
 
 function App() {
@@ -23,8 +24,10 @@ function App() {
 
 
   const appList =[
+
+    {name: "Gen AI Workbench", icon: GenAI_Workbench_icon, link:"genAIWorkbench", description: "Leverage generative AI tools for common business tasks"},
+    {name: "SpendFlow", icon: SpendFlow_icon, link:"SpendFlow", description: "Manage orders, invoices, payments, develop accurate spend plans, prepare budgets, and develop forecasting models by combining actual spend transactions data with forecasting and planning solutions"},
     {name: "RequestFlow", icon: Requests_icon, link:"RequestFlow", description: "Intake solution for managing all requests made by employees including requests for purchases, software access, IT equipment, contracts, sourcing, budgets and more"},
-     {name: "SpendFlow", icon: SpendFlow_icon, link:"SpendFlow", description: "Manage orders, invoices, payments, develop accurate spend plans, prepare budgets, and develop forecasting models by combining actual spend transactions data with forecasting and planning solutions"},
     {name: "SupplyFlow", icon: SupplyFlow_icon, link:"SupplyFlow", description: "Discover, evaluate and select suppliers through strategic negotiations to achieve optimal prices and terms for goods and services you need. Manage contracts and performance for suppliers"},
     {name: "DealFlow", icon: DealFlow_icon, link:"DealFlow", description: "Manage all sales activities including leads, quotes, territories, quotas, customer engagements, collections and more through email and other intake system integrations with accounting and other systems"},
     {name: "PeopleFlow", icon: PeopleFlow_icon, link:"PeopleFlow", description: "Manage employee information, recruiting activities, hiring, temporary staff, and exists"},
@@ -33,7 +36,7 @@ function App() {
     {name: "Spend Value", icon: Spend_Value_icon, link:"Spend_Value", description: "Quantify the savings and value impact of spend management including proftiability and cash, efficiency, risk, and more"},
     {name: "Tail Optimizer", icon: Tail_Optimizer_icon, link:"Tail_Optimizer", description: "Optimize and manage your spend with tail suppliers to maximize savings and efficiency"},
     {name: "Test App", icon: Test_App_icon, link:"TestApp", description: "Internal App for testing integrations and APis"},
-    {name: "TestHTML", icon: nlightn_labs_logo, link:"./test.html", description: "testhtml"}
+    {name: "TestHTML", icon: nlightn_labs_logo, link:"test.html", description: "testhtml"}
   ]
 
   const pageStyle={
