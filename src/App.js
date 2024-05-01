@@ -12,8 +12,6 @@ import ForgotPassword from './components/ForgotPassword.js';
 import ResetPassword from './components/ResetPassword.js';
 
 
-
-
 function App() {
 
   const {
@@ -44,7 +42,15 @@ function App() {
     {name: "Forgot Password", component: <ForgotPassword/>, data: "email", request_type: false, description: "Forgot Password page", icon:`${generalIcons}/sign_up_icon.png`},
     {name: "Reset Password", component: <ResetPassword/>, data: "user_info", request_type: false, description: "Password reset page", icon:`${generalIcons}/sign_up_icon.png`},
   ]
+
+  const getUsers = async()=>{
+    const response = await nlightnApi.getTable("users")
+    console.log(response.data)
+  }
   
+  useEffect(()=>{
+    getUsers()
+  },[])
 
   const getPageData = async(req, res)=>{
     try{
