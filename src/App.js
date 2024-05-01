@@ -43,14 +43,21 @@ function App() {
     {name: "Reset Password", component: <ResetPassword/>, data: "user_info", request_type: false, description: "Password reset page", icon:`${generalIcons}/sign_up_icon.png`},
   ]
 
-  const getUsers = async()=>{
-    const response = await nlightnApi.getTable("users")
-    console.log(response.data)
+  const getData = async()=>{
+    let response = await nlightnApi.getTable("users")
+    const users = response.data
+    console.log("users",users)
+
+    response = await nlightnApi.getTable("apps")
+    const apps = response.data
+    console.log("apps",apps)
+    
+    response = await nlightnApi.getTable("icons")
+    const icons = response.data
+    console.log("icons",icons)
+
   }
   
-  useEffect(()=>{
-    getUsers()
-  },[])
 
   const getPageData = async(req, res)=>{
     try{
@@ -63,8 +70,10 @@ function App() {
   }
 
   useEffect(()=>{
+    getData()
     getPageData()
-  })
+  },[])
+
 
 
   const pageStyle={
