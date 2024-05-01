@@ -5,23 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  width: 100vw;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.fade-in {
-  opacity: 0; /* Set initial opacity to 0 */
-  transition: opacity 1s ease-in-out; /* Apply transition effect */
-}
-
-.fade-in.active {
-  opacity: 1; /* Change opacity to 1 for the fade-in effect */
-}
-
