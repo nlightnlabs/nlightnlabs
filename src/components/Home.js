@@ -37,6 +37,8 @@ const Home = (props) => {
       const appList =[
         {name: "Business Engagement System", icon: `${generalIcons}/DealFlowIcon.png`, link:"besfreeagent", description: "Manage orders, invoices, payments, develop accurate spend plans, prepare budgets, and develop forecasting models by combining actual spend transactions data with forecasting and planning solutions"},
         {name: "AI Deployment Lab", icon: `${generalIcons}/genAI_icon.png`, link: "ailab", description: "Deploy AI with custom LLMs, AI models, agents, bots and data management"},
+        {name: "AI Deployment Lab", icon: `${generalIcons}/genAI_icon.png`, link: "ailab", description: "Deploy AI with custom LLMs, AI models, agents, bots and data management"},
+        {name: "AI Deployment Lab", icon: `${generalIcons}/genAI_icon.png`, link: "ailab", description: "Deploy AI with custom LLMs, AI models, agents, bots and data management"},
         {name: "Secure File Transfer", icon: `${generalIcons}/secure_file_icon.png`, link: "secure_file_transfer", description: "Upload files in a secure portal"},
       ]
 
